@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabele - Tworzenie i modyfikacja tabel (część 2.)</title>
+    <style>
+        body {
+            font-size: 36px;
+            margin: 80px;
+            background-color: blanchedalmond;
+        }
+
+        table {
+            border-spacing: 0;
+        }
+
+        table,
+        td,
+        th {
+            border: 1px solid black;
+        }
+
+        td,
+        th {
+            padding: 5px 20px;
+        }
+
+        thead {
+            background-color: tomato;
+        }
+
+        tbody {
+            background-color: #fff;
+        }
+
+        tfoot {
+            background-color: royalblue;
+        }
+    </style>
+</head>
+<body>
+    <h2>Tabela nr 1</h2>
+    <table style="width: 100%;">
+        <caption>Dane osobowe</caption>
+        <thead>
+        <tr>
+            <th>Danie</th>
+            <th>Cena</th>
+        </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Kotlet schabowy</td>
+                <td>15 zł</td>
+            </tr>
+            <tr>
+                <td>Pepsi</td>
+                <td>10 zł</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Suma</td>
+                <td>25 zł</td>
+            </tr>
+        </tfoot>
+    </table>
+    <br><br>
+    <hr>
+    <h2>Tabela nr 2</h2>
+    <table style="width: 100%;">
+        <caption>Dane osobowe</caption>
+        <tr>
+            <th colspan="2">Nazwisko i Imię</th>
+            <th>Miejscowość</th>
+        </tr>
+        <tr>
+            <td rowspan="2">Korsak</td>
+            <td>Tadeusz</td>
+            <td rowspan="2">Jasło</td>
+        </tr>
+        <tr>
+            <td>Anna</td>
+        </tr>
+        <tr>
+            <td>Makowski</td>
+            <td>Paweł</td>
+            <td>Kraków</td>
+        </tr>
+    </table>
+    <br><br>    
+    <hr>
+    <h2>Tabela nr 3</h2>
+    <table style="width: 100%;">
+        <caption>Dane osobowe</caption>
+        <tr>
+            <td colspan="4">1, 2, 3, 4</td>
+        </tr>
+        <tr>
+            <td colspan="2" style="width: 50%;">5, 6</td>
+            <td colspan="2" style="width: 50%;">7, 8</td>
+        </tr>
+    </table>
+</body>
+</html>
