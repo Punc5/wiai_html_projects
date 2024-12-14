@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tworzenie formularzy - ćwiczenie</title>
+</head>
+<body>
+    <label for=""><b>Podaj imię</b></label>
+    <input type="text" name="imie" id="">
+    <br><br>
+    <label for=""><b>Podaj nazwisko</b></label>
+    <input type="text" name="nazwisko" id="">
+    <br><br>
+    <label for=""><b>Podaj PESEL</b></label>
+    <input type="text" name="pesel" id="" maxlength="11">
+    <br><br>
+    <label for=""><b>Kod pocztowy</b></label>
+    <input type="text" name="kod_pocztowy" id="" maxlength="2" size="4"> -
+    <input type="text" name="kod_pocztowy" id="" maxlength="3" size="4">
+    <br><br>
+    <label for=""><b>Płeć:</b></label>
+    <p>
+        <input type="radio" name="grupa_opcji" id="" value="kobieta">Kobieta<br>
+        <input type="radio" name="grupa_opcji" id="" value="mezczyzna">Mężczyzna<br>
+    </p>
+        <label for="wojewodztwa"><b>Wybierz województwo:</b></label>
+        <p>
+            <select id="wojewodztwa" name="wojewodztwa">
+                <option value="dolnoslaskie">dolnośląskie</option>
+                <option value="kujawsko-pomorskie">kujawsko-Pomorskie</option>
+                <option value="lubelskie">lubelskie</option>
+                <option value="lubuskie">lubuskie</option>
+                <option value="lodzkie">łódzkie</option>
+                <option value="malopolskie">małopolskie</option>
+                <option value="mazowieckie">mazowieckie</option>
+                <option value="opolskie">Opolskie</option>
+                <option value="podkarpackie">podkarpackie</option>
+                <option value="podlaskie">podlaskie</option>
+                <option value="pomorskie">pomorskie</option>
+                <option value="slaskie">śląskie</option>
+                <option value="swietokrzyskie">świętokrzyskie</option>
+                <option value="warminsko-mazurskie">warmińsko-mazurskie</option>
+                <option value="wielkopolskie">wielkopolskie</option>
+                <option value="zachodniopomorskie">zachodniopomorskie</option>
+            </select>
+        </p>
+        <input type="checkbox" name="muzyka" id="" value="muzyka">Muzyka
+        <input type="checkbox" name="muzyka" id="" value="film">Film
+        <input type="checkbox" name="muzyka" id="" value="sport">sport
+        <input type="checkbox" name="muzyka" id="" value="bieganie">bieganie
+        <input type="checkbox" name="muzyka" id="" value="plywanie">pływanie
+        <input type="checkbox" name="muzyka" id="" value="jazda_na_rowerze">jazda na rowerze
+        <input type="checkbox" name="muzyka" id="" value="aerobik">areobik
+        <input type="checkbox" name="muzyka" id="" value="jazda_na_nartach">jazda na nartach
+        <br><br>
+        <input type="reset" value="wyczyść">
+        <br><br>
+        <input type="submit" value="wyślij">
+    </form>
+</body>
+</html>
