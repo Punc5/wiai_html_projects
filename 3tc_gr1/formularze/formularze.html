@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tworzenie formularzy</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <form action="mailto:jkowalski@zstjaslo.pl" method="post">
+        <h4>Formularz kontaktowy</h4>
+        <label for="">Podaj swoje nazwisko i imię:</label>
+        <input type="text" name="nazwisko" id="">
+        <br>
+        <h4>Formularz kontaktowy</h4>
+        <label for="">Podaj swoje nazwisko i imię:</label>
+        <input type="text" name="nazwisko" id="">
+        <input type="checkbox" name="opcje" id="">Zgadzam się na przetwarzanie danych osobowych
+        <br>
+        <h3>Wykształcenie</h3>
+        <label for=""></label>
+        <p>
+            <input type="radio" name="grupa_opcji" id="" value="Podstawowe">Podstawowe<br>
+            <input type="radio" name="grupa_opcji" id="" value="Średnie">Średnie<br>
+            <input type="radio" name="grupa_opcji" id="" value="Wyższe" checked>Wyższe<br>
+        </p>
+        <br>
+        <label for=""></label>
+        <p>
+            Podaj swoje hasło:<input type="password" name="haslo" id="" size="10" maxlength="4">
+        </p>
+        <br>
+        <p>
+            Wyślij ten plik: <input type="file" name="plik" id="" size="30">
+        </p>
+        <br>
+        <p>
+            Przycisk Wyślij
+        </p>
+        <input type="submit" value="Wyślij do mnie">
+        <br><br>
+        <input type="reset" value="Wyczyść">
+        <br>
+        <p>
+            Wpisz swój adres e-mail:
+        </p>
+        <input type="email" name="email" id="">
+        <br>
+        <p>
+            Wprowadź liczby z przedziału od 10 do 100:
+        </p>
+        <input type="number" name="liczba" id="" min="10" max="100" step="5" value="20">
+        <br><br>
+        <button type="submit" name="przycisk1" style="font: 14px Aral; background-color: brown;">Wyślij</button>
+        <br>
+        <h3>Dane osobowe:</h3>
+        <p>Podaj swoje nazwisko i imię:</p>
+        <input type="text" name="nazwisko" id="" size="30">
+        <fieldset>
+            <legend><h4>Wykształcenie</h4></legend>
+            <label for="">
+                <input type="radio" name="grupa_opcji" id="" value="Podstawowe">Podstawowe
+            </label>
+            <br>
+            <label for="">
+                <input type="radio" name="grupa_opcji" id="" value="Średnie">Średnie
+            </label>
+            <br>
+            <label for="">
+                <input type="radio" name="grupa_opcji" id="" value="Wyższe" checked>Wyższe
+            </label>
+            <br>
+        </fieldset>
+        <label for="">
+            Pracuję: <input type="checkbox" name="" id=""></label>
+            <br><br>
+        <input type="reset" value="Wyczyść">
+        <br><br>
+        <h3>Życiorys</h3>
+        <textarea name="blok" id="" cols="40" rows="8">Wprowadź swój tekst</textarea>
+        <br><br>
+        <input type="text" name="" id="" autofocus>
+        <br><br>
+        <input type="text" name="" id="" placeholder="Wpisz swoje imię" required>
+        <input type="text" name="" id="" pattern="\d{2}-\d{2}-\d{4}" title="Wpisz datę w formacie dd-mm-rrrr">
+    </form>
+</body>
+</html>
